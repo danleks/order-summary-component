@@ -1,7 +1,11 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+import font from 'assets/fonts/RedHatDisplay-VariableFont_wght.ttf';
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url(${font});
+}
  html {
         box-sizing: border-box;
         font-size: 62.5%;
